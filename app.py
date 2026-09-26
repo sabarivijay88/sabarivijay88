@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
- 
+
 model = joblib.load("deployment/best_model.pkl")
  
 st.title("Tourism Product Prediction App")
