@@ -19,6 +19,10 @@ input_data = pd.DataFrame({
 })
 
 prediction = model.predict(input_data)[0]
+except Exception as e:
+st.error(str(e))
+st.stop()
+``
 
 if prediction == 1:
     st.success("✅ Customer is likely to take the product!")
