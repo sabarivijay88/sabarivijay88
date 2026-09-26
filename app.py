@@ -25,9 +25,10 @@ st.write(model.feature_names_in_)
 try:
     prediction = model.predict(input_data)[0]
 
-if prediction == 1:
-st.success("✅ Customer is likely to take the product!")
-else:
-st.warning("❌ Customer is unlikely to take the product.")
+    if prediction == 1:
+        st.success("✅ Customer is likely to take the product!")
+    else:
+        st.warning("❌ Customer is unlikely to take the product.")
 
-except Exception
+except Exception as e:
+    st.error(str(e))
