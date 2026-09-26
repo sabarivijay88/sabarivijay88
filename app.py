@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 
 model = joblib.load("deployment/best_model.pkl")
- 
+
 st.title("Tourism Product Prediction App")
  
 age = st.number_input("Age", min_value=18, max_value=100, value=30)
