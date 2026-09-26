@@ -23,7 +23,7 @@ st.write("Model expects these features:")
 st.write(model.feature_names_in_)
 
 try:
-prediction = model.predict(input_data)[0]
+    prediction = model.predict(input_data)[0]
 
 if prediction == 1:
 st.success("✅ Customer is likely to take the product!")
